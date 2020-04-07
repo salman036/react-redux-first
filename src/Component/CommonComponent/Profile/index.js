@@ -23,11 +23,17 @@ export class index extends PureComponent {
   };
 
   static getDerivedStateFromProps(props, state) {
-    return {
-      name: props.user.name,
-      email: props.user.email,
-      password: props.user.password,
-    };
+    console.log("Props", props.user);
+    console.log("State", state.name);
+
+    if (props.user !== state){
+      return {
+        name: props.user.name,
+        email: props.user.email,
+        password: props.user.password,
+      };
+    }
+    
   }
 
   componentDidMount() {
@@ -63,9 +69,10 @@ export class index extends PureComponent {
               <input
                 type="text"
                 placeholder="Full Name"
-                value={this.state.name}
+                defaultValue={this.state.name || ""}
                 name="name"
                 className="profile__form__input"
+                value=""
                 onChange={this.handleChange}
               />
               <label className="profile__form__input__label">Email</label>
