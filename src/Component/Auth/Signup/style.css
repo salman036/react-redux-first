@@ -1,0 +1,168 @@
+.signup {
+    padding: 5rem 8rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+}
+
+.signup {
+    position: relative;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6); }
+.signup__close {
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    /* display: inline-block;  */
+}
+.signup__close__icon {
+    width: 10px;
+    height: 10px; 
+}
+
+.signup__heading {
+    display: flex;
+    align-self: center;
+    margin-top: 7rem;
+    color: #2E2E2E;
+    font-size: 22px; 
+}
+.signup__form {
+    align-self: center;
+    display: flex;
+    flex-direction: column; 
+}
+.signup__form__email {
+    margin-top: 1rem;
+    border: 1px solid #2E2E2E;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    font-weight: 700; 
+}
+
+.signup__form__email::placeholder {
+    color: #9c9c9c;
+    text-align: center; 
+}
+
+.signup__form__email:focus {
+    outline: none; 
+}
+.signup__form__password {
+    margin-top: 1rem;
+    border: 1px solid #2E2E2E;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    font-weight: 700; 
+}
+
+.signup__form__password::placeholder {
+    color: #9c9c9c;
+    text-align: center; 
+}
+
+.signup__form__password:focus {
+    outline: none; 
+}
+
+.signup__form__fullname {
+    margin-top: 1rem;
+    border: 1px solid #2E2E2E;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    font-weight: 700; 
+}
+
+.signup__form__fullname::placeholder {
+    color: #9c9c9c;
+    text-align: center; 
+}
+
+.signup__form__fullname:focus {
+    outline: none; 
+}
+.signup__form__repassword {
+    margin-top: 1rem;
+    border: 1px solid #2E2E2E;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    font-weight: 700; 
+}
+
+.signup__form__repassword::placeholder {
+    color: #9c9c9c;
+    text-align: center; 
+}
+
+.signup__form__repassword:focus {
+    outline: none; 
+}
+
+.signup__form__check {
+    display: flex;
+    align-items: center;
+    align-self: center; 
+}
+
+.signup__form__check__remember {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1rem; 
+}
+
+.signup__submit {
+    align-self: center;
+    margin-top: 2rem; 
+}
+
+.signup__submit__button {
+    margin-top: 2rem;
+    border: none;
+    padding: 2rem 16rem;
+    border-radius: 50em;
+    background-color: #F6305F;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+.signup__forgot {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem; 
+}
+
+.signup__forgot__already:link, .signup__forgot__already:visited {
+    color: #2E2E2E !important;
+    text-decoration: none;
+    color: #F6305F;
+    font-weight: 200;
+    font-size: 10px; 
+}
+
+.signup__forgot__already:link h1, .signup__forgot__already:visited h1 {
+    font-size: 16px;
+    font-weight: 400; 
+}
+.signup__forgot__siginin:link, .signup__forgot__siginin:visited {
+    text-decoration: none;
+    color: #F6305F;
+    font-weight: 200;
+    font-size: 10px; 
+}
+
+.signup__forgot__siginin:link h1, .signup__forgot__siginin:visited h1 {
+    font-size: 16px;
+    font-weight: 400; 
+}
+  
