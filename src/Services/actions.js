@@ -14,16 +14,15 @@ export const alertHandler = () => (dispatch) => {
 };
 
 export const loginRequest = (user) => (dispatch)  => {
-  return fetch(`https://node-rest-api-crud.herokuapp.com/notes`
+  fetch(`https://node-rest-api-crud.herokuapp.com/notes`
   , {
     method: 'POST',
     headers: { 'Content-Type': 'application/json'},
     body: JSON.stringify(user)
   }
   ).then((resp) => {
-    localStorage.setItem("loginUser", user.name)
+    localStorage.setItem("loginUser", user.name);
     resp.json(data => {
-      localStorage.setItem("loginUser", data.name)
       dispatch({
         type: types.LOGIN_REQUEST_SUCCESS,
         data: data
@@ -39,7 +38,7 @@ export const loginRequest = (user) => (dispatch)  => {
 
 export const userData = () =>  (dispatch) => {
   let url = `https://node-rest-api-crud.herokuapp.com/notes/5e8855faf6e2fa0017c97902`
-  return fetch(url).then(resp => {
+  fetch(url).then(resp => {
     resp.json().then(data => {
       dispatch({
         type: types.PROFILE_REQUEST_SUCCESS,
