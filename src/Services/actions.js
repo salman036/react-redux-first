@@ -4,6 +4,7 @@ export const alertHandler = () => (dispatch) => {
   let url = `https://reqres.in/api/${types.USER}/1`;
   fetch(url).then(resp => {
     resp.json().then(data => {
+      console.log("AlertData", data.data)
       dispatch({
         type: types.USER,
         data: data
@@ -20,7 +21,9 @@ export const loginRequest = (user) => (dispatch)  => {
     body: JSON.stringify(user)
   }
   ).then((resp) => {
+    localStorage.setItem("loginUser", user.name)
     resp.json(data => {
+      localStorage.setItem("loginUser", data.name)
       dispatch({
         type: types.LOGIN_REQUEST_SUCCESS,
         data: data

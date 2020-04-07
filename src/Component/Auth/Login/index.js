@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { loginRequest } from "../../../Services/actions";
+import { loginRequest} from "../../../Services/actions";
 
 import closeImage from "../../../images/PNG/cross.png";
 
@@ -36,7 +36,6 @@ export class index extends Component {
   };
 
   render() {
-    console.log("Login ")
     return (
       <>
         <div className="container">
@@ -113,7 +112,8 @@ const mapStateToProps = state => {
 };
 const mapDispachToProps = dispatch => {
   return {
-    loginRequest: loginData => dispatch(loginRequest(loginData))
+    loginRequest: loginData => dispatch(loginRequest(loginData)), 
+    // loginRequest: () => dispatch(alertHandler())
   };
 };
 
