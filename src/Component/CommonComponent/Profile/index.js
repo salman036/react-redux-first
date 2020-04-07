@@ -69,7 +69,7 @@ export class index extends PureComponent {
               <input
                 type="text"
                 placeholder="Full Name"
-                defaultValue={this.state.name || ""}
+                value={this.state.name || ""}
                 name="name"
                 className="profile__form__input"
                 value=""
